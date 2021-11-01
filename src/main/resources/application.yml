@@ -1,0 +1,35 @@
+jwt:
+    get:
+        token:
+            uri: /BackEndChallenge/api/v1.0/token
+    http:
+        request:
+            header: Authorization
+    signing:
+        key:
+            secret: mySecret
+    token:
+        expiration:
+            in:
+                seconds: 604800
+password:
+    user:
+        pattern: ^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#&()?[{}]:;',?/*~$^+=<>]).{8,20}$
+        pattern.invalidMessageException: 'La clave debe contener al menos un digito
+            [0-9], un caracter latino en minuscula [a-z], un caracter latino en mayusculas
+            [A-Z], un caracter especial como ! @ # & (), y un largo de al menos 8
+            a 20 caracteres'
+security:
+    basic:
+        enabled: false=null
+spring:
+    datasource:
+        driverClassName: org.h2.Driver
+        password: admin
+        url: jdbc:h2:mem:test_db
+        username: admin
+    h2:
+        console:
+            enabled: true
+    jpa:
+        database-platform: org.hibernate.dialect.H2Dialect
