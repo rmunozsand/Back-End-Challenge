@@ -16,7 +16,7 @@ Desafio que consiste en el desarrollo una API RESTFul para la creación de nuevo
 $ git clone https://github.com/rmunozsand/Back-End-Challenge
 ```
 
-2 .Levantar el presente proyecto mediante comando de consola Maven
+2. Levantar el presente proyecto mediante comando de consola Maven
 ```
 $ mvn spring-boot:run
 ```
