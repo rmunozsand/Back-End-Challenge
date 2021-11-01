@@ -52,7 +52,7 @@ $ mvn spring-boot:run
 
 2. Presionar en botón Try it out
 
-3. Introducir token de seguridad generado en el servicio anterior, Anteponer el tipo de seguridad Bearer, ejemplo:
+3. Introducir token de seguridad (Header) generado en el servicio anterior, anteponer el tipo de seguridad Bearer, ejemplo:
 
 ```yml
 Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImV4cCI6MTYzNjM5NjU3NiwiaWF0IjoxNjM1NzkxNzc2fQ.WUJ6WPfTFL6_zdhh1E97Ysx0P8pLje3qca82wXYZTBB607bkfpeEmrIzYa-v18mlWCWhxL1nXYSSsthyyYFnYA
@@ -89,6 +89,7 @@ Credenciales por defecto:
 ![Alt text](docs/H2_login.png)
 
 2. Realizar consultas a las tablas PHONE y USER para su validación
+
 ![Alt text](docs/H2_validacion.png)
 
 # Diagrama de solución
