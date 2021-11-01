@@ -11,8 +11,6 @@ Desafio que consiste en el desarrollo una API RESTFul para la creación de nuevo
 
 # Manual de funcionamiento
 
-**Autenticación:**
-
 1. Clonar el presente repositorio
 ```
 $ git clone https://github.com/rmunozsand/Back-End-Challenge
@@ -23,15 +21,18 @@ $ git clone https://github.com/rmunozsand/Back-End-Challenge
 $ mvn spring-boot:run
 ```
 
-3 Acceder a la página inicial de Swagge-UI mediante localhost: http://localhost:8080/swagger-ui.html
 
-4. Seleccionar la operación Post token para realizar la Autenticación y recibir el token de seguridad
+**Autenticación:**
+
+1. Acceder a la página inicial de Swagge-UI mediante localhost: http://localhost:8080/swagger-ui.html
+
+2. Seleccionar la operación Post token para realizar la Autenticación y recibir el token de seguridad
 
 ![Alt text](docs/Swagger_token.png)
 
-5. Presionar en botón Try it out
+3. Presionar en botón Try it out
 
-6. Introducir credenciales en formato Body Json, las credenciales por defecto son
+4. Introducir credenciales en formato Body Json, las credenciales por defecto son
 
 ```yml
 {
@@ -39,9 +40,9 @@ $ mvn spring-boot:run
     "password": 123
 }
 ```
-7. Presionar botón Execute para realizar la petición del servicio
+5. Presionar botón Execute para realizar la petición del servicio
 
-8. Copiar el token de seguridad 
+6. Copiar el token de seguridad 
 
 
 **Creación de usuarios:**
